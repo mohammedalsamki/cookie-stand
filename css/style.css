@@ -242,7 +242,7 @@ h1 span {
   margin-left: 230px;
   margin-top: 100px;
   width: 20px;
-  color: #darkgrey;
+  color: #3d0634;
   transform-origin: bottom center;
 }
 
@@ -260,7 +260,7 @@ h1 {
 }
   table, tr, th, td {
     background-color: aliceblue;
-    border: 1px salmon solid;
+    border: 1px rgb(40, 4, 75) solid;
     border-radius: 5%;
  }
  
@@ -268,5 +268,5 @@ h1 {
    background-color: ;
  }
  #container{
-  border: salmon 15px ridge;
+  border: rgb(66, 9, 71) 15px ridge;
  }
