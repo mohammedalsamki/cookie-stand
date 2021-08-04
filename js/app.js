@@ -128,7 +128,7 @@ for (let i = 0; i < locationArr.length; i++) {
 
 
 
-
+footerRow();
 
 let newForm = document.getElementById("new-cookie-stand");
 
