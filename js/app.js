@@ -126,6 +126,26 @@ for (let i = 0; i < locationArr.length; i++) {
    locationArr[i].renderA();
 }
 
+
+
+
+
+let newForm = document.getElementById("new-cookie-stand");
+
+// console.log(newForm);
+
+newForm.addEventListener('submit', submitHandler);
+function submitHandler (event){
+
+   event.preventDefault();
+   let placeName = event.target.placeName.value;
+   let min1 = event.target.min1.value;
+   let max1 = event.target.max1.value;
+   let avg1 = event.target.avg1.value;
+   
+let newName = new Location (placeName, min1, max1, avg1 , 0 , []);
+newName.custperhour(min1,max1);
+newName.renderA();
 footerRow();
-
-
+console.log(newName);
+}
