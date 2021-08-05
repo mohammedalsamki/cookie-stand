@@ -9,7 +9,7 @@ function randomNumber(min, max) {
 //let randomHoursArray= []; 
 let locationArr = [];
 let table = document.createElement('table');
-
+table.id = 'finalTable';
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
 
@@ -37,7 +37,7 @@ function headerRow() {
    th1.textContent = 'Daily location total';
 }
 
-function footerRow() {
+var x  = function footerRow() {
    let lastRow = document.createElement('tr');
    table.appendChild(lastRow);
 
@@ -128,7 +128,7 @@ for (let i = 0; i < locationArr.length; i++) {
 
 
 
-footerRow();
+x();
 
 let newForm = document.getElementById("new-cookie-stand");
 
@@ -142,10 +142,14 @@ function submitHandler (event){
    let min1 = event.target.min1.value;
    let max1 = event.target.max1.value;
    let avg1 = event.target.avg1.value;
+   document.getElementById('finalTable').deleteRow(-1);
    
 let newName = new Location (placeName, min1, max1, avg1 , 0 , []);
 newName.custperhour(min1,max1);
 newName.renderA();
-footerRow();
+x();
 console.log(newName);
+
 }
+
+
