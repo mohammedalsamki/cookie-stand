@@ -1,27 +1,72 @@
+/*Overall container element*/
+.top-right-nav {
+  color: rgb(158, 59, 48);
+  right: 0px;
+  top: 0px;
+  height:295px;
+  width: 237px;
+  position: fixed;
+  z-index: 1;
+  padding: 25 px;
+  background-image: url("../img/chalkboard.jpg");
+  font-family: 'Fredericka the Great';
+  padding: 28px;
+}
+
 .top-right-nav h2 {
   font-size: 20px;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.coming-soon{
+.top-left-nav li a {
   text-decoration: underline;
+  color: salmon;
+}
+
+.phone {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: -5px;
+}
+
+.top-right-nav p {
+  font-size: 12 px;
+}
+
+.top-left-nav h2 {
+  font-size: 25px;
+
+}
+
+.top-left-nav ul {
+  margin-left: 10px;
+}
+
+.top-left-nav li {
+  margin: 5px;
+
+}
+
+/* .coming-soon{
+  text-decoration: underline;
+} */
+
+.top-left-nav {
+  color: salmon;
+  left: 0px;
+  top: 0px;
+  height:295px;
+  width: 255px;
+  position: fixed;
+  z-index: 1;
+  padding: 25px;
+  background-image: url("../img/chalkboard.jpg");
+  font-family: 'Fredericka the Great'
 }
 
 
-
 body {
-  background-image:url("../img/salmonbg.jpg");
+  background-image:url("../img/salmonheader.jpeg");
   height:50%
   width: 50%;
   position: relative;
@@ -39,9 +84,9 @@ body {
 }
 
 header {
-  background-color: #FFB5AA;
+  background-color: #5f0c51;
   justify-content: center;
-  border: salmon 15px ridge
+  border: rgb(83, 15, 8) 15px ridge
 
 }
 
@@ -55,7 +100,7 @@ header {
   font-family: 'Kaushan Script', cursive;
   font-size: 40px;
   margin-top: -1px;
-  color: #E8265B;
+  color: #380714;
   margin: 10px;
 }
 
@@ -81,7 +126,7 @@ header {
 .logo-text {
   font-family: 'Kaushan Script', cursive;
   font-size: 20px;
-  color: #E8265B;
+  color: salmon;
   text-align: center;
 
 }
@@ -90,7 +135,7 @@ header {
   width: 40%;
   margin-left: 30%;
   border-radius: 25%;
-  background-color: salmon;
+  background-color: rgb(112, 9, 60);
 
 }
 
@@ -130,8 +175,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #FFB5AA;
-  border: salmon 15px ridge;
+  background-color: #5e0e8d;
+  border: rgb(105, 15, 68) 15px ridge;
 }
 
 .content-head {
@@ -143,7 +188,7 @@ header {
   /*background-color: #9348FF;*/
 }
 .content-head h1 {
-  background-color: salmon;
+  background-color: rgb(63, 10, 70);
 
 }
 
@@ -151,10 +196,10 @@ header {
   float: left;
   width: 50%;
   justify-content: center;
-  color: red;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   text-align: center;
-  border-right: salmon solid 2.5px;
+  border-right: rgb(92, 15, 75) solid 2.5px;
   font-family: impact;
   font-size: 25px;
 }
@@ -181,7 +226,7 @@ header {
   width: 50%;
   float: right;
   text-align: center;
-  border-left: salmon solid 2.5px;
+  border-left: rgb(85, 32, 7) solid 2.5px;
 }
 
 .shirt-sale p {
@@ -195,7 +240,7 @@ header {
 }
 
 .shirt-sale {
-  color: red;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-family: impact;
   font-size: 25px;
@@ -242,36 +287,111 @@ h1 span {
   margin-left: 230px;
   margin-top: 100px;
   width: 20px;
-  color: #3d0634;
+  color: #darkgrey;
   transform-origin: bottom center;
 }
 
-
-
-h1 {
-  font: 26px ;
-  height: 40px;
-  
-  text-align: right;
-  
-  width: 20px;
-  color: #3d0634;
-  
+.char1 {
+  transform: rotate(6deg);
 }
-  table, tr, th, td {
-    background-color: aliceblue;
-    border: 1px rgb(40, 4, 75) solid;
-    border-radius: 5%;
- }
- 
- th {
-   background-color: ;
- }
- #container{
-  border: rgb(66, 9, 71) 15px ridge;
- }
- form {
-color: #E8265B;
-background-color: #FFB5AA;
 
- }
+.char2 {
+  transform: rotate(12deg);
+}
+
+.char3 {
+  transform: rotate(18deg);
+}
+
+.char4 {
+  transform: rotate(24deg);
+}
+
+.char5 {
+  transform: rotate(30deg);
+}
+
+.char6 {
+  transform: rotate(36deg);
+}
+
+.char7 {
+  transform: rotate(42deg);
+}
+
+.char8 {
+  transform: rotate(48deg);
+}
+
+.char9 {
+  transform: rotate(54deg);
+}
+
+.char10 {
+  transform: rotate(60deg);
+}
+
+.char11 {
+  transform: rotate(66deg);
+}
+
+.char12 {
+  transform: rotate(72deg);
+}
+
+.char13 {
+  transform: rotate(78deg);
+}
+
+.char14 {
+  transform: rotate(84deg);
+}
+
+.char15 {
+  transform: rotate(90deg);
+}
+
+.char16 {
+  transform: rotate(96deg);
+}
+
+.char17 {
+  transform: rotate(102deg);
+}
+
+.char18 {
+  transform: rotate(108deg);
+}
+
+.char19 {
+  transform: rotate(114deg);
+}
+
+.char20 {
+  transform: rotate(120deg);
+}
+
+.char21 {
+  transform: rotate(126deg);
+}
+
+.char22 {
+  transform: rotate(132deg);
+}
+
+.char23 {
+  transform: rotate(138deg);
+}
+
+.char24 {
+  transform: rotate(144deg);
+}
+
+footer {
+  background-color: #FFB5AA;
+  font-size: 12px;
+  border: salmon 3px ridge;
+  float: right;
+  width: 100%;
+  height: 35px;
+}
