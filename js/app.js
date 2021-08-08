@@ -2,7 +2,7 @@
 
 
 const cityName = [];
-
+let form = document.querySelector('form');
 const time = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 const allOfTotall = new Array(time.length + 1).fill(0);
 
@@ -92,16 +92,41 @@ renderDataRow();
 
 
 let renderFooterRow = function () {
-  let foot = document.getElementById('foot-row');
+  let foot = document.getElementById('footer');
+  let trEl = document.createElement('tr');
   let thEl = document.createElement('th');
   thEl.textContent = 'Grand Total';
-  foot.appendChild(thEl);
+  trEl.appendChild(thEl);
   // console.log(grandTotals);
   for (let i = 0; i < allOfTotall.length; i++) {
     let tdEl = document.createElement('td');
     tdEl.textContent = allOfTotall[i];
     foot.appendChild(tdEl);
   }
+  footer.appendChild(trEl);
 };
 
 renderFooterRow();
+
+
+
+
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityName = event.target.addLocation.value;
+  console.log(location);
+  let minPH = +event.target.miniCust.value;
+  console.log(minPH);
+  let maxPH = +event.target.maxCust.value;
+  console.log(maxPH);
+  let avgCookeiPH = +event.target.avgCookies.value;
+  console.log(avgCookeiPH);
+  new CookiesInfo(cityName, minPH, maxPH, avgCookeiPH);
+  let foot = document.getElementById('footer');
+  foot.removeChild(foot.firstChild);
+  renderFooterRow();
+//   renderDataRow();
+}
+
+form.addEventListener('submit', handleSubmit);
