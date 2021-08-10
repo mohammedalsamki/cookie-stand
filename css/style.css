@@ -3,3 +3,13 @@ body{
   background-color: salmon;
   margin: 20px;
 }
+table {
+  width:90%;
+  table-layout: fixed ;
+  margin-left: 35px;
+}
+table, th, td {
+  border: 1.9px solid #6A1B9A;
+  border-collapse:separate;
+  width:70%;
+}
