@@ -1,92 +1,15 @@
 body{
-  background-color: bisque;
-  width: 960px;
-  margin:auto;
-  border-width:5px;
-}
-a{
-  color:seashell;
-  font-size: 130%;
-  font-family: 'Noto Sans JP', sans-serif;
-  margin-left: 30px;
-  border-width:5px;
-}
-header{
-  font-size: 500%;
-  font-family: 'Noto Sans JP', sans-serif;
-font-family: 'PT Serif', serif;
-  text-align: center;
-  color: brown;
-  border-width:5px;
-}
 
-#location{
-  border-width:5px;
-  font-weight:bold;
-  font-size: 1em;
-  
-  display: inline-block;
-  width: 300px;
-  height: 100px;
-  margin-top: 100px;
-  border: 2px solid black;
-  margin: 25px;
-  padding: 10px;
   background-color: salmon;
+  margin: 20px;
 }
-#time{
-  border-width:5px;
-  font-weight:bold;
-  font-size: 1em;
-  
-  display: inline-block;
-  width: 300px;
-  height: 100px;
-  margin-top: 100px;
-  border: 2px solid black;
-  margin: 25px;
-  padding: 10px;
-  background-color: salmon;
-
+table {
+  width:90%;
+  table-layout: fixed ;
+  margin-left: 35px;
 }
-#product{
-  display: inline; 
-  margin: auto;
-  margin-top: 7%;
-  margin-left: 35%;
-  width: 30%;
-
-}
-#aboutus{
-  margin-top: 15px;
-  width: 50%;
-  float: left;
-  text-align: center;
-}
-#icons{
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 table, th, td {
-  border: 1px solid black;
-  background-color: coral;
-
-}
-
+  border: 1.9px solid #6A1B9A;
+  border-collapse:separate;
+  width:70%;
 }
