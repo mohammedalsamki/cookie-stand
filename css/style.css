@@ -22,7 +22,9 @@ a{
   border-width:5px;
 }
 header{
-  
+
+  font-size: 150%;
+
   font-family: 'Noto Sans JP', sans-serif;
 font-family: 'PT Serif', serif;
   text-align: center;
@@ -100,4 +102,20 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+table, th, td {
+  border: 1px solid black;
+  background-color: coral;
+
+}
+
+}
 
