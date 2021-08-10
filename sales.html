@@ -7,18 +7,38 @@
   </head>
 
   <body>
+    <header>
     <img src="img/salmon.png" alt="logo">
     <br>
     <h1>Salmon Cookies</h1>
     <br>
     <a href="index.html">sales site</a>
     <br>
-    <header id="tableTop" ></header>
-    <main>
-    <section id="container" >
-      
-    </section>
-    <section id="tableBottom"></section>
+    </header>
+    <main id="container">
+      <section>
+          <a href="index.html">Back to index.html</a>
+      </section>
+      <section>
+          <form id="locationForm">
+              <fieldset>
+                  <legend>Add a new location</legend>
+                  <label for="nameOflocation">location name</label>
+                  <input type="text" name="" id="nameOflocation" required>
+
+                  <label for="minCustomersNumber">Min number</label>
+                  <input type="number" name="" id="minCustomersNumber" required>
+
+                  <label for="maxCustomersNumber">Max number</label>
+                  <input type="number" name="" id="maxCustomersNumber" required>
+
+                  <label for="cookiesAverage">Average</label>
+                  <input type="number" name="" id="cookiesAverage" required>
+
+                  <input type="submit" value="Add this location to table">
+              </fieldset>
+          </form>
+      </section>
   </main>
   <footer>
 
